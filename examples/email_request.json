@@ -1,0 +1,13 @@
+{
+  "request_id": "req_demo_001",
+  "actor_id": "agent:demo",
+  "action": "email.send",
+  "object_id": "email:buyer-demo",
+  "environment": "demo",
+  "target": "buyer@example.invalid",
+  "payload": {
+    "subject": "Trinity Gate demonstration",
+    "body": "This is written to a local outbox only."
+  }
+}
+

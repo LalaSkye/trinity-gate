@@ -1,0 +1,27 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "trinity-gate"
+version = "0.2.0"
+description = "Bounded pre-action authority gate and receipt service for agentic workflows."
+readme = "README.md"
+requires-python = ">=3.11"
+license = "MIT"
+authors = [{ name = "Ricky Dean Jones" }]
+dependencies = [
+  "commit-gate-core @ git+https://github.com/LalaSkye/commit-gate-core.git@v0.1.1",
+]
+
+[project.scripts]
+trinity-gate = "trinity_gate.http_api:main"
+
+[tool.setuptools]
+package-dir = { "" = "src" }
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+trinity_gate = ["data/*.json"]

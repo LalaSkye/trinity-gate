@@ -1,0 +1,11 @@
+{
+  "policy_version": "trinity-gate-demo-v0.2",
+  "default_verdict": "DENY",
+  "actions": {
+    "email.send": {
+      "environments": ["demo"],
+      "object_prefixes": ["email:"],
+      "requires_human_approval": true
+    }
+  }
+}
