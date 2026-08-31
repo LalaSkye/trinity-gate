@@ -46,3 +46,32 @@ bundled into the product.
 STOP - local vertical slice built and verified; publication requires fresh
 authority and a named GitHub destination/visibility.
 
+---
+
+# Correction receipt — 2026-08-31T18:42Z
+
+**Supersedes:** the State line and Negative-space paragraph above.  
+**Does not rewrite:** the 2026-08-05T01:40:41Z local verification list.
+
+**Observed public state (verified 2026-08-31):**
+
+- Destination: `https://github.com/LalaSkye/trinity-gate` — public, not empty
+- Repo created: `2026-08-05T01:59:16Z`
+- Head commit: `2003be7a344a889dbcb88587f067532e5779ddaf`
+- Commit message: `Initial public release: Trinity Gate v0.2.0`
+- Author/committer: Ricky Dean Jones `<ricky.mcjones@gmail.com>` / GitHub user `LalaSkye`
+- Pushed: `2026-08-05T02:04:10Z`
+- Commit signature: unverified
+- Inspection-class banner: absent
+- Security-log credential (browser vs PAT vs app): not established from this session
+
+**Corrected state:** PUBLIC / PUBLISHED TO `LalaSkye/trinity-gate` / NOT DEPLOYED AS A SERVICE
+
+**Not claimed by this correction:**
+
+- That this object is the Brick 7 Tool Gate Wrapper specified 2026-06-22
+- That this object is one of the three public inspection objects
+- Production readiness, real email, or non-bypassability off the demo path
+- That the 5 Aug publish path is fully accounted in Notion
+
+STOP — documentation correction of publication state only; no code change.
