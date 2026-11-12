@@ -1,0 +1,23 @@
+{
+  "source": {
+    "id": "source-001",
+    "version": "1",
+    "author": "Ada",
+    "text": "Ada reported 1,200 reviewed items."
+  },
+  "target": {
+    "id": "handoff-001",
+    "version": "1",
+    "author": "Ben",
+    "text": "Ada reported 1,300 reviewed items."
+  },
+  "bindings": [
+    {
+      "id": "n1",
+      "kind": "number",
+      "original": "1,200",
+      "rendered": "1,300",
+      "attributed_to": "Ada"
+    }
+  ]
+}
