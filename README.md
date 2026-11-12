@@ -54,11 +54,28 @@ outbox rows:    1
 receipt chain:  valid
 ```
 
-Run tests:
+Run tests on a supported Python 3.11+ installation:
 
 ```bash
 python -m unittest discover -s tests -v
 ```
+
+For **read-only test review on Python 3.10**, the package itself does not
+support installation. Vector's bounded audit used separate source checkouts
+and `PYTHONPATH` instead. From the repository root, with the released core
+checked out alongside this repository:
+
+```bash
+# Clone the core separately and check out its v0.1.1 tag.
+git clone --branch v0.1.1 --depth 1 https://github.com/LalaSkye/commit-gate-core.git ../commit-gate-core
+PYTHONPATH=../commit-gate-core/src:src:. python3 -m unittest discover -s tests -v
+```
+
+This fallback reproduces the **test import arrangement only**. It does not
+make Python 3.10 a supported installation target or establish production
+compatibility. Vector reported 92 tests passing under Python 3.10.21 with
+this source-path approach on 12 November 2026; that was an external audit
+receipt, not a GitHub Actions result. The public CI workflow targets 3.11.
 
 Run the local HTTP service:
 
