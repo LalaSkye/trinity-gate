@@ -1,0 +1,56 @@
+{
+  "nodes": [
+    {
+      "id": "claim",
+      "kind": "claim",
+      "status": "REPORTED",
+      "source": "local:claim"
+    },
+    {
+      "id": "source-a",
+      "kind": "original",
+      "status": "VERIFIED",
+      "source": "local:source-a"
+    },
+    {
+      "id": "summary-a",
+      "kind": "summary",
+      "status": "REPORTED",
+      "source": "local:summary-a"
+    },
+    {
+      "id": "report-b",
+      "kind": "report",
+      "status": "REPORTED",
+      "source": "local:report-b"
+    }
+  ],
+  "edges": [
+    {
+      "from": "claim",
+      "to": "summary-a",
+      "relation": "supports"
+    },
+    {
+      "from": "claim",
+      "to": "report-b",
+      "relation": "supports"
+    },
+    {
+      "from": "summary-a",
+      "to": "source-a",
+      "relation": "derived_from"
+    },
+    {
+      "from": "report-b",
+      "to": "source-a",
+      "relation": "derived_from"
+    }
+  ],
+  "claims": [
+    {
+      "claim": "claim",
+      "min_independent_roots": 2
+    }
+  ]
+}
